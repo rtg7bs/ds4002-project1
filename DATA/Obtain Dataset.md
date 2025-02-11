@@ -6,3 +6,11 @@
 
 ### Cities Used:
 - Austin, TX; Boston, MA; Chicago, IL; Clark County, NV; Dallas, TX; Denver, CO; Fort Worth, TX; Los Angeles, CA; Nashville, TN; New Orleans, LA; New York City, NY; Portland, OR; San Diego, CA; San Francisco, CA; Seattle, WA; Twin Citites MSA, MN; Washington, D.C.
+
+## 3. Extract the Compressed Files
+
+## 4. Data Cleaning
+
+## 5. Sampling
+
+## 6. Aggregating
