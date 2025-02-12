@@ -74,6 +74,14 @@ print("total rows in dataset: ", df.shape[0])
 
 print(df.head(20))
 
+# get overall sentiment 
+def get_overall_sent(review):
+    return sent_analyzer.polarity_scores(review)['compound']
+
+
+df["overall_sent_compound"] = df["comments"].apply(get_overall_sent)
+print(df["cleanliness_sent_compound"])
+
 
 
 
