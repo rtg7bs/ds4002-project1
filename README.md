@@ -81,11 +81,9 @@ Install tidyverse package
 Follow the instructions in `DATA/obtain_data`
 ### Step 4: Run Scripts in Order
 #### 1. VADER Sentiment
-Run ``
+Run `vader.py`
 #### 2. Feature Extraction
-Run ``
+Run `feature_extract_cluster.ipynb`
 #### 3. Linear Regression
-Run ``
-#### 4. Visualizations
-Run ``
+Run `linear_reg`
 
