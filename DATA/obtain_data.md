@@ -11,10 +11,10 @@
 
 ## 4. Run Data Cleaning Scripts
 ### Run the following scipts located in `SCRIPTS\`
-- `vance` for Austin, Boston, Chicago, Clark County, Dallas, Denver
-- `ben` for Fort Worth, Los Angeles, Nashville, New Orleans, New York City, Portland
-- `christine` for San Diego, San Francisco, Seattle, Twin Cities, MSA
+- `cleaning_1.ipynb` for Austin, Boston, Chicago, Clark County, Dallas, Denver
+- `cleaning_2.R` for Fort Worth, Los Angeles, Nashville, New Orleans, New York City, Portland
+- `cleaning_3.ipynb` for San Diego, San Francisco, Seattle, Twin Cities, MSA
 ### These scripts clean the data and conduct random sampling of reviews from each city
 
-## 5. Aggregating the Data
-- `aggregate` to combine the 3 subsets into the combined clean dataset
+## 5. Aggregate the Data
+- `aggregate_data` to combine the 3 subsets into the combined clean dataset
