@@ -1,3 +1,15 @@
+'''
+- this script ultimately creates a new CSV file containing the overall VADER compound sentiment score, the compound sentiment score for cleanliness, the compound sentiment score for location, and the compound sentiment score for safety.
+- the function get_compound_sentiment() tokenizes each review and then loops through each sentence within that review
+    - the function then loops through each value in the keyword_dict and looks for the corresponding words related to the current keyword in each sentence.
+    - if a sentence containing a related keyword is detected, it is appended to a list that will only contain sentences related to that aspect of customer experience.
+
+- the function get_compound_sentiment() is then applied to each observation in the data frame 3 times, once for each aspect of customer experience which is passed in as an argument to determine
+which key in the keyword_dict is being used at the moment. this is done using a lambda function because the pandas function .apply() only takes in 1 argument, but we need to pass in an axis 
+of the dataframe along with the aspect of customer experience being looked for 
+- the function get_overall_sent() is used to get the overall sentiment of the review, regardless of whether it contains keywords related to the core aspects of customer experience.
+'''
+
 import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import nltk
@@ -46,13 +58,13 @@ df["location"] = df["comments"].apply(check_review_for_location)
 def get_compound_sentiment(review, aspect):
     sentences = nltk.sent_tokenize(review)
 
-    related_sentences = []
+    related_sentences = [] # list containing sentences related to the aspect keyword
     for sentence in sentences:
         for word in keyword_dict[aspect]:
             if word in sentence.lower(): # if the keyword is in the entire string
                 related_sentences.append(sentence)
                 break
-    # first join the sentences related to an aspect into a single string
+    # first join the sentences related to an aspect into a single string for overall score
     aspect_str = " ".join(related_sentences).strip()
 
     if len(aspect_str) > 0:
@@ -74,7 +86,7 @@ print("total rows in dataset: ", df.shape[0])
 
 print(df.head(20))
 
-# get overall sentiment 
+# get overall sentiment, regardless of aspect. 
 def get_overall_sent(review):
     return sent_analyzer.polarity_scores(review)['compound']
 
@@ -82,6 +94,11 @@ def get_overall_sent(review):
 df["overall_sent_compound"] = df["comments"].apply(get_overall_sent)
 print(df["cleanliness_sent_compound"])
 
+# drop index column ?
+df = df.drop(columns=["Unnamed: 0"])
+print(df.columns)
 
+# write to file
+# df.to_csv('reviews_with_sentiment.csv', index=False)
 
 
