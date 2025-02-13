@@ -41,11 +41,11 @@ This project analyzes sentiment in Airbnb reviews from 17 major cities in order 
 
 │   ├── aggregate_data.ipynb # aggregates the output from the 3 cleaning files
 
-│   ├── cleaning_1.ipynb # cleaning and EDA plots for Austin, Boston, Chicago, Clark County, Dallas, and Denver
+│   ├── cleaning_1.ipynb # For Austin, Boston, Chicago, Clark County, Dallas, and Denver
 
-│   ├── cleaning_2.R # cleaning and EDA for Fort Worth, Los Angeles, Nashville, New Orleans, New York City, and Portland
+│   ├── cleaning_2.R # For Fort Worth, Los Angeles, Nashville, New Orleans, New York City, and Portland
 
-│   ├── cleaning_3.ipynb # cleaning and EDA for San Diego, San Francisco, Seattle, Twin Cities MSA, and Washington, D.C.
+│   ├── cleaning_3.ipynb # For San Diego, San Francisco, Seattle, Twin Cities MSA, and Washington, D.C.
 
 │   ├── feature_extract_cluster.ipynb # feature extraction with machine learning
 
