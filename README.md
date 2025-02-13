@@ -6,6 +6,9 @@
 
 **Members:** Christine Tsai, Ben Harris, Vance Newsome (leader)
 
+## Project Overview
+This project analyzes sentiment in Airbnb reviews from 17 major cities in order to determine how sentiment scores and amenity preferences change across a range of prices. 
+
 ## Contents of the Repository
 - `README.md` - Overview of the project and instructions for replication.
 - `LICENSE.md` - Specifies the terms of use for this repository.
@@ -19,35 +22,47 @@
 - RStudio 2024.9.1.394
 ### Required Packages
 #### Python: 
-- `pandas` (for data manipulation)
-- `numpy`
-- `sklearn` (for machine learning)
-- `sklearn.model_selection`
-- `matplotlib`
-- `matplotlib.pyplot`
-- `vadersentiment`
+- `pandas` (data manipulation)
+- `numpy` (numerical operations)
+- `scikit-learn` (machine learning)
+- `matplotlib` (visualization)
+- `vadersentiment` (sentiment analysis)
 #### R:
-- `tidyverse` (for data manipulation and visualization)
+- `tidyverse` (data manipulation and visualization)
 ### Platform
 - Windows 11
 
 ## Map of Documentation
-├ `README.md`
-├── `LICENSE`
-
-├── `SCRIPTS/`
-
-├── `DATA/`
-
-├── `raw.csv`
-
-├── `OUTPUT/`
+├── README.md
+├── LICENSE.md
+├── SCRIPTS/
+│   ├── 
+│   ├── 
+│   ├── 
+├── DATA/
+│   ├── 
+│   ├──
+├── OUTPUT/
+│   ├── 
+│   ├── 
 
 
 ## Instructions for Reproduction
 ### Step 1: Clone the Repository
 ### Step 2: Install Dependencies
-#### Python
+#### Python:
+Install the required packages (list above)
 #### R
-### Step 3: Run Scripts
-#### Run `` to clean 
+Install tidyverse package
+### Step 3: Obtain and Clean Raw Data 
+Follow the instructions in `DATA/obtain_data`
+### Step 4: Run Scripts in Order
+#### 1. VADER Sentiment
+Run ``
+#### 2. Feature Extraction
+Run ``
+#### 3. Linear Regression
+Run ``
+#### 4. Visualizations
+Run ``
+
