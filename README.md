@@ -20,7 +20,12 @@
 ### Required Packages
 #### Python: 
 - `pandas` (for data manipulation)
-- `scikit-learn` (for machine learning)
+- `numpy`
+- `sklearn` (for machine learning)
+- `sklearn.model_selection`
+- `matplotlib`
+- `matplotlib.pyplot`
+- `vadersentiment`
 #### R:
 - `tidyverse` (for data manipulation and visualization)
 ### Platform
