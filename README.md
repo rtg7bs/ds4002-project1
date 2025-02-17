@@ -53,6 +53,8 @@ This project analyzes sentiment in Airbnb reviews from 17 major cities in order 
 
 │   ├── vader.ipynb # sentiment scoring of reviews
 
+│   ├── anova_r2.R # ANOVA and R-squared for sentiment scores by attribute
+
 ├── DATA/
 
 │   ├── data_appendix.pdf # describes dataset
@@ -65,9 +67,11 @@ This project analyzes sentiment in Airbnb reviews from 17 major cities in order 
 
 ├── OUTPUT/
 
-│   ├── 
+│   ├── pca.png
 
-│   ├── 
+│   ├── sil.png
+
+│   ├── wordstfidf.png
 
 
 ## Instructions for Reproduction
