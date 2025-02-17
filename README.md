@@ -67,11 +67,11 @@ This project analyzes sentiment in Airbnb reviews from 17 major cities in order 
 
 ├── OUTPUT/
 
-│   ├── pca.png
+│   ├── pca.png # visualization of clustering
 
-│   ├── sil.png
+│   ├── sil.png # graph of silhoutte scores for clustering
 
-│   ├── wordstfidf.png
+│   ├── wordstfidf.png # chart of 20 most important words in the reviews
 
 
 ## Instructions for Reproduction
@@ -90,4 +90,4 @@ Run `vader.py`
 Run `feature_extract_cluster.ipynb`
 #### 3. Linear Regression
 Run `linear_reg`
-
+### Step 5: View Resulting Visualizations in `OUTPUT`
